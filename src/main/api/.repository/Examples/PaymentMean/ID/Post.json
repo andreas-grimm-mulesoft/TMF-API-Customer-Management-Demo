@@ -1,0 +1,20 @@
+          {
+            "name": "My favourite payment mean",
+            "validFor": {
+              "startDateTime": "2013-04-19T16:42:23-04:00",
+              "endDateTime": "2014-04-19T16:42:23-04:00"
+            },
+            "paymentMeanType": "BankAccountDebit",
+            "relatedParty": {
+              "id": "1",
+              "role": "customer",
+              "name": "Gustave Flaubert",
+              "href": "http://serverlocation:port/partyManagement/individual/1"
+            },
+            "bankAccount": {
+              "BIC": "PSSTFRPPPAR",
+              "domiciliation": "LaBanquePostale–75900ParixCedex15",
+              "IBAN": "FR4620061009010835927F33098",
+              "accountHolder": "Mr.GustaveFlaubert"
+            }
+          }

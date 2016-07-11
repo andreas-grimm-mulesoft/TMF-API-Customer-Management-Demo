@@ -1,0 +1,9 @@
+- searchableByFilter:
+    queryParameters:
+      filter:
+        type: "string"
+        required: false
+- searchableByField:
+    queryParameters:
+      filter:
+        type: "string"

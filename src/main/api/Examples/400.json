@@ -1,0 +1,7 @@
+              {
+                "data": {
+                  "message": "Not found when the supplied ID doesn't match a known paymentMean",
+                  },
+                  "success": false,
+                  "status": 404
+              }

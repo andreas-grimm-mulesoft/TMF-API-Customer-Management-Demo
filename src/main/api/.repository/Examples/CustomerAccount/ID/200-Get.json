@@ -1,0 +1,158 @@
+               {
+                "id": "ca1234",
+                "href": "http://serverlocation:port/customerManagement/customerAccount/ca1234",
+                "lastModified": "2014-09-24T18:27:37.059899Z",
+                "name": "sampleaccount",
+                "accountType": "Residential",
+                "status": "Active",
+                "description": "Description string",
+                "creditLimit": 1212121,
+                "pin": "pin0",
+                "receivableBalance": 52.3,
+                "customerAccountTaxExemption": [
+                  {
+                  "issuingJurisdiction": "SampleJurisdiction",
+                  "certificateNumber": "CATaxExemption1",
+                  "reason": "Reason",
+                  "validFor": {
+                    "startDateTime": "2013-04-19T16:42:23.0Z",
+                    "endDateTime": "2013-06-19T00:00:00.0Z"
+                    }
+                  },
+                  {
+                  "issuingJurisdiction": "SampleJurisdiction",
+                  "certificateNumber": "CATaxExemption1",
+                  "reason": "Reason",
+                  "validFor": {
+                    "startDateTime": "2013-04-19T16:42:23.0Z",
+                    "endDateTime": "2013-06-19T00:00:00.0Z"
+                    }
+                  }
+                ],
+                "customerAccountRelationship": [
+                  {
+                    "validFor": {
+                    "startDateTime": "2013-04-19T16:42:23.0Z",
+                    "endDateTime": "2013-06-19T00:00:00.0Z"
+                    },
+                    "customerAccount": [
+                      {
+                      "id": "1",
+                      "href": "http://serverlocation:port/customerManagement/customerAccount/1",
+                      "name": "CustomerAccount1",
+                      "description": "CustomerAccountDesc1"
+                      }
+                    ]
+                  }
+                ],
+                "contact": [
+                {
+                "contactType": "primary",
+                  "validFor": {
+                  "startDateTime": "2013-04-19T16:42:23.0Z",
+                  "endDateTime": "2013-06-19T00:00:00.0Z"
+                  },
+                "contactName": "DisplayName",
+                "partyRoleType": "CustomerAccountRepresentative",
+                "contactMedium": [
+                  {
+                  "type": "Email",
+                  "medium": {
+                    "emailAddress": "abc@tmforum.com"
+                    }
+                  },
+                  {
+                  "type": "PostalAddress",
+                  "medium": {
+                    "city": "Wien",
+                    "country": "Austria",
+                    "postcode": "1020",
+                    "stateOrProvince": "Quebec",
+                    "street1": "Lassallestrasse7"
+                    }
+                  },
+                  {
+                  "type": "TelephoneNumber",
+                  "medium": {
+                    "type": "mobile",
+                    "number": "+436641234567"
+                    }
+                  },
+                {
+                "preferred": true,
+                "type": "TelephoneNumber",
+                  "medium": {
+                    "type": "business",
+                    "number": "+436641234567"
+                    }
+                  }
+                ],
+                "relatedParty": {
+                  "id": "1",
+                  "href": "http://serverlocation:port/partyManagement/individual/1",
+                  "role": "customer"
+                  }
+                }
+                ],
+                "customer": {
+                  "id": "1",
+                  "href": "http://serverlocation:port/customerManagement/customer/1",
+                  "name": "Customer1",
+                  "description": "CustomerDesc1"
+                  },
+                "customerAccountBalance": [
+                  {
+                    "type": "ReceivableBalance",
+                    "amount": 52.3,
+                    "validFor": {
+                      "startDateTime": "2013-04-19T16:42:23.0Z",
+                      "endDateTime": "2013-06-19T00:00:00.0Z"
+                    },
+                  "status": "Due"
+                  },
+                  {
+                  "type": "DepositBalance",
+                  "amount": 52.3,
+                  "validFor": {
+                    "startDateTime": "2013-04-19T16:42:23.0Z",
+                    "endDateTime": "2013-06-19T00:00:00.0Z"
+                  },
+                  "status": "Paid"
+                  }
+                ],
+                "paymentPlan": [
+                  {
+                  "status": "Effective",
+                  "type": "Type1",
+                  "priority": 1,
+                  "amount": 15.3,
+                  "paymentFrequency": "monthly",
+                  "numberOfPayments": 4,
+                  "validFor": {
+                  "startDateTime": "2013-04-19T16:42:23.0Z",
+                  "endDateTime": "2013-06-19T00:00:00.0Z"
+                  },
+                  "paymentMean": {
+                  "id": "45",
+                  "href": "http://serverlocation:port/customerManagement/paymentMean/45",
+                  "description": "My favourite payment mean"
+                  }
+                  },
+                  {
+                    "status": "Ineffective",
+                    "type": "Type2",
+                    "priority": 2,
+                    "amount": 20,
+                    "paymentFrequency": "monthly",
+                    "numberOfPayments": 2,
+                    "validFor": {
+                      "startDateTime": "2013-04-19T16:42:23.0Z",
+                      "endDateTime": "2013-06-19T00:00:00.0Z"
+                    },
+                    "paymentMean": {
+                      "id": "70",
+                      "href": "http://serverlocation:port/customerManagement/paymentMean/70",
+                      "name": "my credit card payment mean"
+                      }
+                  }
+                ]

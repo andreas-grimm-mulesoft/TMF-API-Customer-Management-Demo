@@ -1,0 +1,7 @@
+          {
+            "op": "update",
+            "path": "/customerAccount/paymentMean",
+            "value": {
+              "name": "new name for my credit card"
+            }
+          }

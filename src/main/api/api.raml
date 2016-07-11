@@ -1,0 +1,48 @@
+#%RAML 0.8
+title: customerManagement
+version: 0.1
+baseUri: http://server/api/{version}/customerManagement
+
+traits: !include traits.yaml
+resourceTypes: !include resource-types.yaml
+
+/customer:
+  type:
+    customerColl:
+      customerCollGetResponse: !include Examples/Customer/200-Get.json
+      customerCollPostRequest: !include Examples/Customer/Post.json
+      customerCollPostResponse: !include Examples/Customer/201-Post.json
+
+/customer/{ID}:
+  type:
+    customerItem:
+      customerItemGetResponse: !include Examples/Customer/ID/200-Get.json
+      customerItemPutRequest: !include Examples/Customer/ID/Put.json
+      customerItemPatchRequest: !include Examples/Customer/ID/Patch.json
+      customerItemPatchResponse: !include Examples/Customer/ID/200-Patch.json
+        
+/customerAccount:
+  type:
+    customerAccountColl:
+      customerAccountCollGetResponse: !include Examples/CustomerAccount/200-Get.json
+      customerAccountCollPostRequest: !include Examples/CustomerAccount/Post.json
+      customerAccountCollPostResponse: !include Examples/CustomerAccount/200-Post.json
+
+/customerAccount/{ID}:
+  type:
+    customerAccountItem:
+      customerAccountItemGetResponse: !include Examples/CustomerAccount/ID/200-Get.json
+      customerAccountItemPatchRequest: !include Examples/CustomerAccount/ID/Patch.json
+          
+/paymentMean:
+  type:
+    paymentMeanColl:
+      paymentMeanCollGetResponse: !include Examples/PaymentMean/200-Get.json
+  
+/paymentMean/{ID}:
+  type:
+    paymentMeanItem:
+      paymentMeanItemGetResponse: !include Examples/PaymentMean/ID/200-Get.json
+      paymentMeanItemPatchRequest: !include Examples/PaymentMean/ID/Patch.json
+      paymentMeanItemPostRequest: !include Examples/PaymentMean/ID/Post.json
+      paymentMeanItemPostResponse: !include Examples/PaymentMean/ID/200-Post.json

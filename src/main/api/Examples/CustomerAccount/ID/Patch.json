@@ -1,0 +1,13 @@
+          {
+            "op": "add",
+            "path": "/customerAccount/customerAccountTaxExemption",
+            "value": {
+              "issuingJurisdiction": "Sample Jurisdiction",
+              "certificateNumber": "CA Tax Exemption 3",
+              "reason": "Reason",
+              "validFor": {
+                "startDateTime": "2013-04-19T16:42:23-04:00",
+                "endDateTime": ""
+              }
+            }
+          }

@@ -1,0 +1,48 @@
+              {
+                "id": "c1234",
+                "name": "DisplayName",
+                "status": "New",
+                "validFor": {
+                  "startDateTime": "2013-04-19T16:42:23-04:00",
+                  "endDateTime": ""
+                },
+                "customerRank": 3,
+                "relatedParty": {
+                  "id": "1",
+                  "href": "http://serverlocation:port/partyManagement/individual/1"
+                },
+                "contactMedium": [
+                  {
+                    "type": "Email",
+                    "medium": {
+                      "emailAddress": "abc@tmforum.com"
+                    }
+                  }, {
+                    "preferred": true,
+                    "type": "TelephoneNumber",
+                    "medium": {
+                      "type": "business",
+                      "number": "+436641234567"
+                    }
+                  }
+                ],
+                "customerCreditProfile": [
+                  {
+                    "creditProfileDate": "2013-04-19T16:42:23-04:00",
+                    "validFor": {
+                      "startDateTime": "2013-04-19T16:42:23-04:00",
+                      "endDateTime": "2013-06-19T00:00:00-04:00"
+                    },
+                    "creditRiskRating": "1",
+                    "creditScore": "1"
+                  }, {
+                    "creditProfileDate": "2013-04-19T16:42:23-04:00",
+                    "validFor": {
+                      "startDateTime": "2013-04-19T16:42:23-04:00",
+                      "endDateTime": "2013-06-19T00:00:00-04:00"
+                    },
+                    "creditRiskRating": "1",
+                    "creditScore": "1"
+                  }
+                ]
+              }
